@@ -3657,11 +3657,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.048484749"
-     inkscape:cx="7253.7474"
-     inkscape:cy="3596.1436"
+     inkscape:zoom="0.45254834"
+     inkscape:cx="11033.35"
+     inkscape:cy="4114.5212"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer11"
      showgrid="true"
      showborder="true"
      inkscape:window-width="1920"
@@ -3691,7 +3691,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -8237,6 +8237,35 @@
        style="fill:#6eccd5;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 3551.6062,2762.6144 -297.8767,-171.9791 206.2223,-119.0625 297.8767,171.9791 z"
        id="path8484"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="9">
+    <path
+       style="fill:none;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 2428.8403,2914.22596053 A 35.2777777771,35.2777777771,0,0,0,2446.47919535,2944.777416 L 2513.4052398,2983.41716691 A 35.2777777771,35.2777777771,0,0,0,2566.3219,2952.86571143 L 2566.3219,2928.50283947 A 35.2777777771,35.2777777771,0,0,0,2548.68300465,2897.951384 L 2481.7569602,2859.31163309 A 35.2777777771,35.2777777771,0,0,0,2428.8403,2889.86308857 Z "
+       id="path3272"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4509"
+       d="M 2881.83739047,2614.04831694
+A 35.2777777771,35.2777777771,0,0,1,2864.1985,2583.49686429
+L 2864.1985,2453.30072293
+A 35.2777777771,35.2777777771,0,0,1,2917.11517508,2422.74927605
+L 3075.69541953,2514.30568113
+A 35.2777777771,35.2777777771,0,0,1,3093.3343,2544.85712802
+L 3093.3343,2675.05320016
+A 35.2777777771,35.2777777771,0,0,1,3040.41763492,2705.60465282
+Z
+"
+       style="fill:#5a69d6;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 2910.0257,2603.8645 v -132.2917 l 137.4815,79.375 v 132.2916 z"
+       id="path5750"
        inkscape:connector-curvature="0" />
   </g>
   <path
