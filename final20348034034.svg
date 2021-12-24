@@ -4122,11 +4122,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.64"
-     inkscape:cx="15486.719"
-     inkscape:cy="8021.0938"
+     inkscape:zoom="0.02"
+     inkscape:cx="-1575"
+     inkscape:cy="17225"
      inkscape:document-units="px"
-     inkscape:current-layer="layer15"
+     inkscape:current-layer="layer2"
      showgrid="true"
      showborder="true"
      inkscape:window-width="1920"
@@ -4333,7 +4333,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="1"
-     style="display:none;opacity:1"
+     style="display:inline;opacity:1"
      transform="translate(3780.7424,-1391.2106)">
     <path
        style="display:inline;opacity:1;fill:url(#linearGradient5883-7);stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -8877,7 +8877,7 @@
      inkscape:groupmode="layer"
      id="layer15"
      inkscape:label="11"
-     style="display:inline">
+     style="display:none">
     <path
        style="fill:#69b04c;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 4101.5323,1997.6043 22.9137,13.2292 91.6543,-52.9167 -22.9137,-13.2291 z"
@@ -8907,7 +8907,7 @@
        d="m 4193.1866,1997.6043 v 52.9167 l 22.9137,-13.2292 v -52.9166 z"
        id="path480984" />
     <path
-       style="fill:#69b04c;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="fill:#69b04c;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 4124.446,2143.1252 -22.9137,-13.2292 22.9137,-13.2292 z"
        id="path2150" />
   </g>
