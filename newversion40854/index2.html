@@ -18,7 +18,54 @@
 
 <!--<body style="background: radial-gradient(#0EA09F, #471367);">>-->
   <div id="svgbox2">
-    <div id="vl"></div>
+    <!--<div id="vl"></div>-->
+    <div class="firework" id="firework1">
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+    </div>
+  </div>
+  <div id = "svgbox3">
+    <div class="firework" id="firework2">
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+    </div>
+  </div>
+  <div id = "svgbox4">
+    <div class="firework" id="firework3">
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+      <div class="explosion"></div>
+    </div>
+    </div>
   </div>
     <div id="svgbox">
         <!--<div viewBox="0 0 1200 1200" width="400" height="400" xmlns="http://www.w3.org/2000/svg">-->
@@ -685,6 +732,16 @@ padding: 20px;
   transform: rotate(0deg) skew(0deg, -30deg);
   left: 200px;
 }
+#svgbox3 {
+  position: absolute;
+  transform: rotate(0deg) skew(0deg, -30deg);
+  left: 200px;
+}
+#svgbox4 {
+  position: absolute;
+  transform: rotate(0deg) skew(0deg, -30deg);
+  left: 200px;
+}
 #funny{
     animation: rect5anim 60s infinite;
 }
@@ -764,6 +821,7 @@ padding: 20px;
     transform: translate(-600px, -300px) translateZ(0);
   }
 }
+/*
 @keyframes explosion {
 	0% {
 		transform: scale(0) translateZ(0);
@@ -772,6 +830,7 @@ padding: 20px;
 		transform: scale(0.5) translateZ(0);
 	}
 }
+*/
     .div17 {
         position: absolute;
         width: 20px;
@@ -872,6 +931,101 @@ padding: 20px;
         0%{ opacity: 1; }
         100% { opacity: 0; }
     }
+    .firework {
+	position: absolute;
+}
+.explosion {
+	position: absolute;
+	left: -2px;
+	bottom: 0;
+	width: 4px;
+	height: 80px;
+	transform-origin: 50% 100%;
+	/* background-color: rgba(0,0,0,.2); */
+	overflow: hidden;
+}
+.explosion:nth-child(1) {
+	transform: rotate(0deg) translateY(-15px);
+}
+.explosion:nth-child(2) {
+	transform: rotate(30deg) translateY(-15px);
+}
+.explosion:nth-child(3) {
+	transform: rotate(60deg) translateY(-15px);
+}
+.explosion:nth-child(4) {
+	transform: rotate(90deg) translateY(-15px);
+}
+.explosion:nth-child(5) {
+	transform: rotate(120deg) translateY(-15px);
+}
+.explosion:nth-child(6) {
+	transform: rotate(150deg) translateY(-15px);
+}
+.explosion:nth-child(7) {
+	transform: rotate(180deg) translateY(-15px);
+}
+.explosion:nth-child(8) {
+	transform: rotate(210deg) translateY(-15px);
+}
+.explosion:nth-child(9) {
+	transform: rotate(240deg) translateY(-15px);
+}
+.explosion:nth-child(10) {
+	transform: rotate(270deg) translateY(-15px);
+}
+.explosion:nth-child(11) {
+	transform: rotate(300deg) translateY(-15px);
+}
+.explosion:nth-child(12) {
+	transform: rotate(330deg) translateY(-15px);
+}
+
+.explosion::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	height: 40px;
+	background-color: #f5cf52;
+}
+@keyframes explosion {
+	0% {
+		top: 100%;
+	}
+	33%, 100% {
+		top: -50%;
+	}
+}
+
+#firework1 {
+	left: 600px;
+  top: 400px;
+	transform: scale(1);
+}
+#firework1 .explosion::before {
+	animation: explosion 6s ease-in-out infinite;
+}
+
+#firework2 {
+  left: 700px;
+  top: 500px;
+	transform: scale(.7);
+}
+#firework2 .explosion::before {
+	animation: explosion 4s .6s ease-in-out infinite;
+}
+
+#firework3 {
+  left: 300px;
+  top: 800px;
+	transform: scale(.4);
+}
+#firework3 .explosion::before {
+	animation: explosion 8s .4s ease-in-out infinite;
+}
+
   </style>
   <script type = "text/javascript">
   /*
@@ -943,6 +1097,37 @@ padding: 20px;
 */
     </script>
     <script>
+      
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+      }
+      function randomPosition(){
+        var elements = document.querySelectorAll('.firework');
+        for(var i=0; i<elements.length; i++){
+          elements[i].style.left = getRandomInt(0,700);
+          elements[i].style.top = getRandomInt(500,700);
+        }
+      }
+      function randomPosition1(){
+        var elements = document.querySelectorAll('.firework1');
+        for(var i=0; i<elements.length; i++){
+          elements[i].style.left = getRandomInt(0,700);
+          elements[i].style.top = getRandomInt(500,700);
+        }
+      }
+      function randomPosition2(){
+        var elements = document.querySelectorAll('.firework1');
+        for(var i=0; i<elements.length; i++){
+          elements[i].style.left = getRandomInt(0,700);
+          elements[i].style.top = getRandomInt(500,700);
+        }
+      }
+
+      setInterval(randomPosition(), 1000);
+      setInterval(randomPosition2(), 1000);
+      setInterval(randomPosition3(), 1000);
         // Set the date we're counting down to
         var countDownDate = new Date("Jan 1, 2022 00:00:00 GMT-8").getTime();
         
