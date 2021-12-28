@@ -278,9 +278,7 @@
         <div class="marking marking-two"></div>
         <div class="marking marking-three"></div>
         <div class="marking marking-four"></div>
-       <!-- <div class="inner-clock-face"> -->
-         
-<img src="finalrender2/clocktower.png" alt="" />
+        <div class="inner-clock-face">
           <div class="hand hour-hand"></div>
           <div class="hand min-hand"></div>
           <div class="hand second-hand"></div>
@@ -1246,24 +1244,21 @@ padding: 20px;
   transform: rotate(150deg)
 }
 
-img{
-  
+.inner-clock-face {
   position: absolute;
   top: 10%;
   left: 10%;
   width: 80%;
   height: 80%;
   /*background: #282828;*/
-  /*
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   z-index: 1;
-  */
-  width: 1920px;
-    height: 1080px;
-    border-radius: 50%;
-  
+  -webkit-mask-image: url(finalrender2/1.png);
+  mask-image: url(finalrender2/1);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
 }
 
 .inner-clock-face::before {
