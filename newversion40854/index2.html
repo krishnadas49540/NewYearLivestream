@@ -306,8 +306,12 @@
       </div>
     </div>
   </div>
+    <div class = "grassonlybelowone"></div>
+    <div class = "fillerbottom"></div>
     <div class = "one"></div>
     <div class = "onepointfive"></div>
+    <div class = "aboveone"></div>
+    <div class = "aboveonepointfive"></div>
     <div class = "two"></div>
     <div class = "three"></div>
     <div class = "four"></div>
@@ -366,6 +370,13 @@
       width: 1920px;
       position: absolute;
     }
+    .fillerbottom{
+      background: url(finalrender2/fillerbottom.png) right bottom;
+        background-size: 100%;
+        height: 1080px;
+        width: 1920px;
+        position: absolute;
+    }
     .clocktower{
         background: url(finalrender2/clocktower.png) right bottom;
         background-size: 100%;
@@ -380,6 +391,13 @@
         width: 1920px;
         position: absolute;
     }
+    .grassonlybelowone{
+      background:url(finalrender2/grassonlybelow1.png) right bottom;
+      background-size: 100%;
+      height: 1080px;
+      width: 1920px;
+      position: absolute;
+    }
     .onepointfive{
         background: url(finalrender2/1.5.png) right bottom;
         background-size: 100%;
@@ -387,11 +405,25 @@
         width: 1920px;
         position: absolute;
     }
+    .aboveone{
+      background: url(finalrender2/above1.png) right bottom;
+      background-size: 100%;
+      height: 1080px;
+      width: 1920px;
+      position: absolute;
+    }
+    .aboveonepointfive{
+      background: url(finalrender2/above1.5.png) right bottom;
+      background-size: 100%;
+      height: 1080px;
+      width: 1920px;
+      position: absolute;
+    }
     #funnysquare{
       width: 15%;
         display: flex;
         background-color: rgb(44, 184, 175);
-        font-size: 20px;
+        font-size: 25px;
   display: flex;
   justify-content: center; /* horizontal center */
   align-items: center;     /* vertical center */
@@ -1777,7 +1809,7 @@ background: linear-gradient(55deg, rgba(30,58,87,1) 10%, rgb(47, 98, 128) 100%);
           }
         }, 1000);
         //PST
-        var countDownDate3 = new Date("Jan 1, 2021 00:00:00 GMT-8:00").getTime();
+        var countDownDate3 = new Date("Jan 1, 2022 00:00:00 GMT-8:00").getTime();
         
         // Update the count down every 1 second
         var x3 = setInterval(function() {
@@ -1804,13 +1836,125 @@ background: linear-gradient(55deg, rgba(30,58,87,1) 10%, rgb(47, 98, 128) 100%);
             document.getElementById("funnysquare").style.animation="fadeinout 20s";
           }
         }, 1000);
+        //CST
+        var countDownDate4 = new Date("Jan 1, 2022 00:00:00 GMT-6:00").getTime();
+        
+        // Update the count down every 1 second
+        var x4 = setInterval(function() {
+        
+          // Get today's date and time
+          var now4 = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance4 = countDownDate4 - now4;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days4 = Math.floor(distance4 / (1000 * 60 * 60 * 24));
+          var hours4 = Math.floor((distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes4 = Math.floor((distance4 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds4 = Math.floor((distance4 % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+            
+          // If the count down is over, write some text 
+          if (distance4 < 0) {
+            console.log(distance4);
+            clearInterval(x4);
+            document.getElementById("funnysquare").innerHTML = "New Year has just occured in the <br> Central Standard Time Zone!<br>🎉🎉🎉🎉🎉🎉";
+            document.getElementById("funnysquare").style.animation="fadeinout 20s";
+          }
+        }, 1000);
+                //MST
+                var countDownDate5 = new Date("Jan 1, 2022 00:00:00 GMT-7:00").getTime();
+        
+        // Update the count down every 1 second
+        var x5 = setInterval(function() {
+        
+          // Get today's date and time
+          var now5 = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance5 = countDownDate5 - now5;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days5 = Math.floor(distance5 / (1000 * 60 * 60 * 24));
+          var hours5 = Math.floor((distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes5 = Math.floor((distance5 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds5 = Math.floor((distance5 % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+            
+          // If the count down is over, write some text 
+          if (distance5 < 0) {
+            console.log(distance5);
+            clearInterval(x5);
+            document.getElementById("funnysquare").innerHTML = "New Year has just occured in the <br> Mountain Standard Time Zone!<br>🎉🎉🎉🎉🎉🎉";
+            document.getElementById("funnysquare").style.animation="fadeinout 20s";
+          }
+        }, 1000);
+                        //EST
+                        var countDownDate6 = new Date("Jan 1, 2022 00:00:00 GMT-5:00").getTime();
+        
+        // Update the count down every 1 second
+        var x6 = setInterval(function() {
+        
+          // Get today's date and time
+          var now6 = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance6 = countDownDate6 - now6;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days6 = Math.floor(distance6 / (1000 * 60 * 60 * 24));
+          var hours6 = Math.floor((distance6 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes6 = Math.floor((distance6 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds6 = Math.floor((distance6 % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+            
+          // If the count down is over, write some text 
+          if (distance6 < 0) {
+            console.log(distance6);
+            clearInterval(x6);
+            document.getElementById("funnysquare").innerHTML = "New Year has just occured in the <br> Eastern Standard Time Zone!<br>🎉🎉🎉🎉🎉🎉";
+            document.getElementById("funnysquare").style.animation="fadeinout 20s";
+          }
+        }, 1000);
+                //SST
+                var countDownDate7 = new Date("Jan 1, 2022 00:00:00 GMT+8:00").getTime();
+        
+        // Update the count down every 1 second
+        var x7 = setInterval(function() {
+        
+          // Get today's date and time
+          var now7 = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance7 = countDownDate7 - now7;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days7 = Math.floor(distance7 / (1000 * 60 * 60 * 24));
+          var hours7 = Math.floor((distance7 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes7 = Math.floor((distance7 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds7 = Math.floor((distance7 % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+            
+          // If the count down is over, write some text 
+          if (distance7 < 0) {
+            console.log(distance7);
+            clearInterval(x7);
+            document.getElementById("funnysquare").innerHTML = "New Year has just occured in <br> Singapore!<br>🎉🎉🎉🎉🎉🎉";
+            document.getElementById("funnysquare").style.animation="fadeinout 20s";
+          }
+        }, 1000);
         const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
 function setDate() {
   var now = new Date();
-  var now = changeTimezone(now, "America/Toronto");
+  var now = changeTimezone(now, "America/Los_Angeles");
   const seconds = now.getSeconds();
   const secondsDegrees = ((seconds / 60) * 360) + 90;
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
