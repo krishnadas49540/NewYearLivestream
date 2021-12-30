@@ -1948,6 +1948,62 @@ background: linear-gradient(55deg, rgba(30,58,87,1) 10%, rgb(47, 98, 128) 100%);
             document.getElementById("funnysquare").style.animation="fadeinout 20s";
           }
         }, 1000);
+                        //PAK
+                        var countDownDate8 = new Date("Jan 1, 2022 00:00:00 GMT+5:00").getTime();
+        
+        // Update the count down every 1 second
+        var x8 = setInterval(function() {
+        
+          // Get today's date and time
+          var now8 = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance8 = countDownDate8 - now8;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days8 = Math.floor(distance8 / (1000 * 60 * 60 * 24));
+          var hours8 = Math.floor((distance8 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes8 = Math.floor((distance8 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds8 = Math.floor((distance8 % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+            
+          // If the count down is over, write some text 
+          if (distance8 < 0) {
+            console.log(distance8);
+            clearInterval(x8);
+            document.getElementById("funnysquare").innerHTML = "New Year has just occured in <br> Pakistan!<br>🎉🎉🎉🎉🎉🎉";
+            document.getElementById("funnysquare").style.animation="fadeinout 20s";
+          }
+        }, 1000);
+                //BGD
+                var countDownDate9 = new Date("Jan 1, 2022 00:00:00 GMT+6:00").getTime();
+        
+        // Update the count down every 1 second
+        var x9 = setInterval(function() {
+        
+          // Get today's date and time
+          var now9 = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance9 = countDownDate9 - now9;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days9 = Math.floor(distance9 / (1000 * 60 * 60 * 24));
+          var hours9 = Math.floor((distance9 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes9 = Math.floor((distance9 % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds9 = Math.floor((distance9 % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+            
+          // If the count down is over, write some text 
+          if (distance9 < 0) {
+            console.log(distance9);
+            clearInterval(x9);
+            document.getElementById("funnysquare").innerHTML = "New Year has just occured in <br> Bangladesh!<br>🎉🎉🎉🎉🎉🎉";
+            document.getElementById("funnysquare").style.animation="fadeinout 20s";
+          }
+        }, 1000);
         const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
